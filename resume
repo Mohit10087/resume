@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Miglani – Resume</title>
+    <style>
+        
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI','Calibri',sans-serif;color:#333;background:#f5f5f5;line-height:1.5;}
+
+        
+        .resume-container{width:8.5in;height:11in;margin:0 auto;display:flex;background:#fff;box-shadow:0 3px 10px rgba(0,0,0,.2);overflow:hidden;}
+        .sidebar{width:2.4in;background:#2c3e50;color:#fff;padding:20px;}
+        .main-content{width:6.1in;padding:25px;overflow-y:auto;}
+
+        
+        .profile{text-align:center;margin-bottom:15px;}
+        .logo-container{display:flex;justify-content:center;margin-bottom:12px;}
+        .m-logo{width:55px;height:55px;border:3px solid #3498db;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#3498db 0%,#2980b9 50%,#1f618d 100%);box-shadow:0 6px 20px rgba(52,152,219,.4);position:relative;overflow:hidden;transition:.3s;}
+        .m-logo::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:linear-gradient(45deg,transparent,rgba(255,255,255,.2),transparent);animation:shine 4s infinite;}
+        .m-logo::after{content:'';position:absolute;inset:4px;border-radius:8px;background:linear-gradient(135deg,rgba(255,255,255,.1),transparent);pointer-events:none;}
+        .m-letter{font-size:32px;font-weight:900;color:#fff;text-shadow:2px 2px 4px rgba(0,0,0,.4);z-index:1;font-family:'Arial Black',sans-serif;}
+        @keyframes shine{0%{transform:translate(-100%,-100%) rotate(45deg);}50%{transform:translate(100%,100%) rotate(45deg);}100%{transform:translate(-100%,-100%) rotate(45deg);}}
+
+        .profile-name{font-size:20px;font-weight:bold;margin-bottom:5px;letter-spacing:1px;}
+        .profile-title{font-size:14px;color:#ecf0f1;margin-bottom:12px;}
+
+        .contact-info{margin-bottom:15px;}
+        .contact-item{display:flex;align-items:center;margin-bottom:6px;font-size:12px;}
+        .contact-icon{width:18px;margin-right:8px;text-align:center;}
+
+        .sidebar-section{margin-bottom:15px;}
+        .sidebar-title{font-size:14px;font-weight:bold;margin-bottom:8px;position:relative;text-transform:uppercase;}
+        .sidebar-title:after{content:'';position:absolute;bottom:-3px;left:0;width:45px;height:2px;background:#3498db;}
+        .sidebar-content{font-size:11px;}
+        .skill-list{list-style:none;}
+        .skill-item{margin-bottom:3px;position:relative;padding-left:12px;}
+        .skill-item:before{content:'•';position:absolute;left:0;color:#3498db;}
+
+        
+        .main-section{margin-bottom:18px;}
+        .main-title{font-size:16px;font-weight:bold;color:#2c3e50;margin-bottom:10px;position:relative;text-transform:uppercase;}
+        .main-title:after{content:'';position:absolute;bottom:-5px;left:0;width:70px;height:2px;background:#3498db;}
+
+        .education-item,.project-item,.achievement-item{margin-bottom:10px;}
+        .education-title,.project-title,.achievement-title{font-weight:bold;font-size:14px;color:#2c3e50;}
+        .education-subtitle{font-style:italic;margin-bottom:4px;font-size:12px;}
+        .education-date,.project-date{color:#7f8c8d;font-size:12px;}
+        .project-description,.achievement-description{font-size:13px;margin-top:5px;}
+
+        .project-bullet,.achievement-bullet{margin-left:15px;position:relative;padding-left:15px;margin-bottom:3px;font-size:13px;}
+        .project-bullet:before,.achievement-bullet:before{content:'•';position:absolute;left:0;color:#3498db;}
+
+        .gpa{color:#3498db;font-weight:bold;}
+
+        
+        @media print{
+            body{background:#fff;}
+            .resume-container{box-shadow:none;height:100%;}
+            .m-logo::before{animation:none;}
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        
+        <div class="sidebar">
+            <div class="profile">
+                <div class="logo-container">
+                    <div class="m-logo"><div class="m-letter">M</div></div>
+                </div>
+                <div class="profile-name">MOHIT MIGLANI</div>
+                <div class="profile-title">Computer Science &amp; Engineering Student</div>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <a href="mailto:miglanimohit347@gmail.com" style="color:#fff;text-decoration:none;">
+                            miglanimohit347@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>+91 8824278277</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <a href="https://github.com/Mohit10087" target="_blank" style="color:#fff;text-decoration:none;">
+                            github.com/Mohit10087
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🔗</div>
+                    <div>
+                        <a href="https://linkedin.com/in/mohit-miglani-835abb28a" target="_blank" style="color:#fff;text-decoration:none;">
+                            LinkedIn: mohit-miglani
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🏫</div>
+                    <div>VIT, Vellore</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Programming Languages</div>
+                <div class="sidebar-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">C</li>
+                        <li class="skill-item">C++</li>
+                        <li class="skill-item">Java</li>
+                        <li class="skill-item">Python (Basic)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Web Development</div>
+                <div class="sidebar-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">HTML</li>
+                        <li class="skill-item">CSS</li>
+                        <li class="skill-item">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">CS Fundamentals</div>
+                <div class="sidebar-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">Data Structures &amp; Algorithms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Tools</div>
+                <div class="sidebar-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">Git &amp; GitHub</li>
+                        <li class="skill-item">VS Code</li>
+                        <li class="skill-item">MySirG</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Languages</div>
+                <div class="sidebar-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">English (Fluent)</li>
+                        <li class="skill-item">Hindi (Native)</li>
+                        <li class="skill-item">Punjabi (Native)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="main-content">
+            
+            <div class="main-section">
+                <div class="main-title">Education</div>
+                <div class="education-item">
+                    <div class="education-title">B.Tech Computer Science &amp; Engineering (Core)</div>
+                    <div class="education-subtitle">Vellore Institute of Technology, Vellore</div>
+                    <div class="education-date">2023 – 2027 | Expected Graduation: 2027</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">Senior School Certificate (Class XII)</div>
+                    <div class="education-subtitle">Swarajaya Senior Secondary School, Alwar</div>
+                    <div class="education-date">2022 – 2023 | <span class="gpa">78.6%</span></div>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">Secondary School Certificate (Class X)</div>
+                    <div class="education-subtitle">Adarsh Convent School, Padmpur, Rajasthan</div>
+                    <div class="education-date">2020 – 2021 | <span class="gpa">84.2%</span></div>
+                </div>
+            </div>
+
+            
+            <div class="main-section">
+                <div class="main-title">Projects</div>
+                <div class="project-item">
+                    <div class="project-title">Portfolio Website</div>
+                    <div class="project-description">
+                        <div class="project-bullet">Personal website showcasing skills and projects with a clean, responsive UI.</div>
+                        <div class="project-bullet">Built using HTML, CSS, and JavaScript.</div>
+                        <div class="project-bullet">
+                            GitHub:
+                            <a href="https://github.com/Mohit10087/Portfolio" target="_blank" style="color:#3498db;text-decoration:none;">
+                                github.com/Mohit10087/Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">Analog Clock Web App</div>
+                    <div class="project-description">
+                        <div class="project-bullet">Fully functional analog clock using vanilla JavaScript, CSS animations, and HTML.</div>
+                        <div class="project-bullet">Demonstrates real-time DOM manipulation.</div>
+                        <div class="project-bullet">
+                            GitHub:
+                            <a href="https://github.com/Mohit10087/Analog-clock" target="_blank" style="color:#3498db;text-decoration:none;">
+                                github.com/Mohit10087/Analog-clock
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">Maintenance Request Web Frontend</div>
+                    <div class="project-description">
+                        <div class="project-bullet">HTML/CSS UI for logging maintenance issues with mobile-friendly design.</div>
+                        <div class="project-bullet">
+                            GitHub:
+                            <a href="https://github.com/Mohit10087/Maintenance" target="_blank" style="color:#3498db;text-decoration:none;">
+                                github.com/Mohit10087/Maintenance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="main-section">
+                <div class="main-title">Achievements &amp; Certifications</div>
+                <div class="achievement-item">
+                    <div class="achievement-bullet"><strong>C, C++ &amp; DSA Certification – MySirG:</strong> Completed comprehensive course covering programming fundamentals and data structures.</div>
+                    <div class="achievement-bullet">Built and hosted multiple live GitHub projects demonstrating continuous learning.</div>
+                    <div class="achievement-bullet">Actively growing LinkedIn and GitHub presence to engage with developer community.</div>
+                    <div class="achievement-bullet">Self-motivated, project-oriented learner with a passion for web development.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
